@@ -15,6 +15,7 @@ class EEGExperiment:
 
         # FIO1: PLATO goggles initialized to opaque
         self.lj.setFIOState(1, 0)
+        self.lj.setFIOState(0, 0)
 
     def check_goggles(self):
         """Returns status of PLATO goggles: 'Opaque' or 'Transparent'"""
@@ -27,9 +28,11 @@ class EEGExperiment:
             # is it time in ms since start of experiment ?
         if desired_state == "transparent":
             self.lj.setFIOState(1, 1)  # Set FIO1 to 1 (transparent goggles)
+            self.lj.setFIOState(0, 1)
             self.goggles_state = "transparent"
         else:
             self.lj.setFIOState(1, 0)  # Set FIO1 to 0 (opaque goggles)
+            self.lj.setFIOState(0, 1)
             self.goggles_state = "opaque"
         
         self.data.append({'event': f'goggles_{desired_state}', 'timestamp': time.time()})
