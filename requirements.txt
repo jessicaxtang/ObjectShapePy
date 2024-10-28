@@ -1,0 +1,4 @@
+LabJackPython
+numpy
+pandas
+tk
