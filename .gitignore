@@ -1,0 +1,15 @@
+build
+pymotive.cpp
+
+*.pyd
+*.pyc
+*.dll
+
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore environment configuration files that may contain sensitive information
+.venv
+
+# Ignore all data files
+data/*
