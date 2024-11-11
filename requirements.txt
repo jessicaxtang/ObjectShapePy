@@ -2,3 +2,4 @@ LabJackPython
 numpy
 pandas
 tk
+pybind11
