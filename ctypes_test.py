@@ -7,7 +7,7 @@ import time
 
 
 # Load the Motive API DLL
-motive_api = ctypes.WinDLL("C:/Program Files/OptiTrack/Motive/lib/MotiveAPI.dll")
+motive_api = ctypes.WinDLL(r"C:\Program Files\OptiTrack\Motive\lib\MotiveAPI.dll")
 
 # Do we need to load a Motive camera calibration file?
 
