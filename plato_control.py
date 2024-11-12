@@ -32,7 +32,7 @@ class EEGExperiment:
             self.goggles_state = "transparent"
         else:
             self.lj.setFIOState(1, 0)  # Set FIO1 to 0 (opaque goggles)
-            self.lj.setFIOState(0, 1)
+            self.lj.setFIOState(0, 0)
             self.goggles_state = "opaque"
         
         self.data.append({'event': f'goggles_{desired_state}', 'timestamp': time.time()})
