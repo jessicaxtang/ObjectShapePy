@@ -27,12 +27,12 @@ class EEGExperiment:
         # to do: check if time.time() gives ok output/what is EEG data time format ?? 
             # is it time in ms since start of experiment ?
         if desired_state == "transparent":
-            self.lj.setFIOState(1, 1)  # Set FIO1 to 1 (transparent goggles)
-            self.lj.setFIOState(0, 1)
+            self.lj.setFIOState(1, 0)  # Set FIO1 to 1 (transparent goggles)
+            self.lj.setFIOState(0, 0)
             self.goggles_state = "transparent"
         else:
-            self.lj.setFIOState(1, 0)  # Set FIO1 to 0 (opaque goggles)
-            self.lj.setFIOState(0, 0)
+            self.lj.setFIOState(1, 1)  # Set FIO1 to 0 (opaque goggles)
+            self.lj.setFIOState(0, 1)
             self.goggles_state = "opaque"
         
         self.data.append({'event': f'goggles_{desired_state}', 'timestamp': time.time()})
