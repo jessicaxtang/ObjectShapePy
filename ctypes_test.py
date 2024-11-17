@@ -4,14 +4,30 @@ Simple tester for the Motive API using ctypes
 
 import ctypes
 import time
+import os
 
 # Load the Motive API DLL
+full_dll_path = "C:\\Program Files\\OptiTrack\\Motive\\lib\\MotiveAPI.dll"
+
 try:
-    motive_api = ctypes.CDLL("C:\\Program Files\\OptiTrack\\Motive\\lib\\MotiveAPI.dll")
-    print("Motive API DLL loaded successfully.")
+    motive_api = ctypes.WinDLL(full_dll_path)
+    print(f"Motive API DLL loaded successfully from full path: {full_dll_path}")
+
 except OSError as e:
-    print(f"Error loading Motive API DLL: {e}")
-    exit(1)
+    print(f"Error loading Motive API DLL from full path: {e}")
+    print("Attempting to load from project folder...")
+
+    project_dll_path = os.path.join(os.getcwd(), "MotiveAPI.dll")
+    
+    try:
+        motive_api = ctypes.WinDLL(project_dll_path)
+        print(f"Motive API DLL loaded successfully from project folder: {project_dll_path}")
+
+    except OSError as e:
+        print(f"Error loading Motive API DLL from project folder: {e}")
+        print("Failed to load Motive API DLL. Exiting...")
+        exit(1)
+
 # Do we need to load a Motive camera calibration file?
 
 motive_api.Initialize()
