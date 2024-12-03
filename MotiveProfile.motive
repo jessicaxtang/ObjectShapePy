@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profile version="1">
+    <property_warehouse>
+        <properties>
+            <property name="ShowMarkerInfos" value="true"/>
+            <property name="SkeletonCreationPose" value="A-Pose Palms Forward"/>
+            <property name="CreationModel" value="Segment"/>
+            <property name="SkeletonDefaultMarkerset" value="-4"/>
+            <property name="EnableAudioCapture" value="false"/>
+            <property name="AudioCaptureInput" value="-">
+                <constraints>
+                    <constraint name="-" value="-"/>
+                </constraints>
+            </property>
+            <property name="AudioCaptureDeviceFormat" value="-#0"/>
+            <property name="AudioPlaybackOutput" value="G2460 (2- HD Audio Driver for Display Audio)">
+                <constraints>
+                    <constraint name="G2460 (2- HD Audio Driver for Display Audio)" value="G2460 (2- HD Audio Driver for Display Audio)"/>
+                    <constraint name="MS Sound Mapper" value="MS Sound Mapper"/>
+                </constraints>
+            </property>
+            <property name="AudioPlaybackDeviceFormat" value="-"/>
+            <property name="AudioPlaybackTakeFormat" value="-"/>
+            <property name="FillTargetMarker" value="None" default_value="2402:11828551617407685103"/>
+            <property name="DialogExportGroupPath" value="D:/"/>
+            <property name="DialogOtherGroupPath" value="C:/Users/MoCap/Documents/OptiTrack/Default/"/>
+            <property name="CalibrationOptiWandType" value="CW-250 (250mm)"/>
+            <property name="CalibrationOptiWandLength" value="0.250000"/>
+            <property name="CalibrationOptiWandCenterOffset" value="0.087500"/>
+            <property name="PCResidual" value="0.002665"/>
+            <property name="PCMaxRayLength" value="3.239331"/>
+            <property name="ShowReconstructionBounds" value="false"/>
+            <property name="ReconstructionBoundsShape" value="Cuboid"/>
+            <property name="ReconstructionBoundsXCenter" value="0.000000"/>
+            <property name="ReconstructionBoundsYCenter" value="0.000000"/>
+            <property name="ReconstructionBoundsZCenter" value="0.000000"/>
+            <property name="ReconstructionBoundsXWidth" value="12.000000"/>
+            <property name="ReconstructionBoundsYWidth" value="12.000000"/>
+            <property name="ReconstructionBoundsZWidth" value="12.000000"/>
+            <property name="PCObjectFilterObjectROIGuardBand" value="Off"/>
+            <property name="PCObjectFilterObjectAspectStepSize" value="0"/>
+            <property name="CSVExporterAxisConvention" value="Measurement"/>
+            <property name="CSVExporterXAxis" value="Right (X-)"/>
+            <property name="CSVExporterYAxis" value="Forward (Z+)"/>
+            <property name="CSVExporterZAxis" value="Up (Y+)"/>
+            <property name="CSVExporterFilename" value="D:/wide_002.csv"/>
+        </properties>
+    </property_warehouse>
+    <mouse_actions version="1">
+        <assignment name="ExpandSelectInView">
+            <buttons invert_x="0" invert_y="0">
+                <left/>
+            </buttons>
+            <modifiers>
+                <shift/>
+            </modifiers>
+        </assignment>
+        <assignment name="PanView">
+            <buttons invert_x="0" invert_y="0">
+                <middle/>
+            </buttons>
+            <modifiers/>
+        </assignment>
+        <assignment name="RotateView">
+            <buttons invert_x="0" invert_y="0">
+                <right/>
+            </buttons>
+            <modifiers/>
+        </assignment>
+        <assignment name="ScrubTime">
+            <buttons invert_x="0" invert_y="0">
+                <left/>
+            </buttons>
+            <modifiers>
+                <alt/>
+            </modifiers>
+        </assignment>
+        <assignment name="SelectInView">
+            <buttons invert_x="0" invert_y="0">
+                <left/>
+            </buttons>
+            <modifiers/>
+        </assignment>
+        <assignment name="ToggleSelectInView">
+            <buttons invert_x="0" invert_y="0">
+                <left/>
+            </buttons>
+            <modifiers>
+                <ctrl/>
+            </modifiers>
+        </assignment>
+        <assignment name="ZoomView">
+            <buttons invert_x="0" invert_y="0">
+                <wheel/>
+            </buttons>
+            <modifiers/>
+        </assignment>
+        <assignment name="ZoomViewSlow">
+            <buttons invert_x="0" invert_y="0">
+                <wheel/>
+            </buttons>
+            <modifiers>
+                <shift/>
+            </modifiers>
+        </assignment>
+    </mouse_actions>
+    <action_manager>
+        <selection_sets/>
+        <hotkeys version="1">
+            <hotkey key="Space" action="StartStopRecordOrPlayback"/>
+            <hotkey key="+" action="AddSticksDaisy"/>
+            <hotkey key="," action="ToggleCamerasVisible"/>
+            <hotkey key="-" action="DeleteSticks"/>
+            <hotkey key="." action="ToggleViewRigidbodies"/>
+            <hotkey key="/" action="ToggleViewSkeletons"/>
+            <hotkey key="1" action="SetPerspectiveView"/>
+            <hotkey key="2" action="SetMultiCameraView"/>
+            <hotkey key="3" action="SetSelectionView"/>
+            <hotkey key=";" action="ToggleViewTrackedRays"/>
+            <hotkey key="A" action="IncrementBackward"/>
+            <hotkey key="B" action="EndSelection"/>
+            <hotkey key="C" action="FillSelectedCubic"/>
+            <hotkey key="D" action="ToggleQuickSelect"/>
+            <hotkey key="E" action="Rotate3DObject"/>
+            <hotkey key="F" action="FrameSelectedInView"/>
+            <hotkey key="G" action="ToggleFollowSelected"/>
+            <hotkey key="I" action="SetVideoToMJPEGMode"/>
+            <hotkey key="L" action="ToggleViewMarkerLabels"/>
+            <hotkey key="M" action="ToggleViewMarkers"/>
+            <hotkey key="N" action="ToggleViewMarkerSticks"/>
+            <hotkey key="O" action="SetVideoToObjectMode"/>
+            <hotkey key="P" action="SampleProbe"/>
+            <hotkey key="Q" action="Select3DObject"/>
+            <hotkey key="R" action="Scale3DObject"/>
+            <hotkey key="S" action="IncrementForward"/>
+            <hotkey key="U" action="SetVideoToGrayScaleMode"/>
+            <hotkey key="V" action="StartSelection"/>
+            <hotkey key="W" action="Move3DObject"/>
+            <hotkey key="Z" action="FindNextGap"/>
+            <hotkey key="[" action="SetStartOfWorkingRange"/>
+            <hotkey key="]" action="SetEndOfWorkingRange"/>
+            <hotkey key="Del" action="DeleteAction"/>
+            <hotkey key="Left" action="StepTimeBackward"/>
+            <hotkey key="Up" action="PageTimeForward"/>
+            <hotkey key="Right" action="StepTimeForward"/>
+            <hotkey key="Down" action="PageTimeBackward"/>
+            <hotkey key="Shift++" action="AutoAddSticks"/>
+            <hotkey key="Shift+1" action="SetSingleViewport"/>
+            <hotkey key="Shift+2" action="SetTwoHorizontalViewports"/>
+            <hotkey key="Shift+3" action="SetTwoVerticalViewports"/>
+            <hotkey key="Shift+4" action="SetQuadViewports"/>
+            <hotkey key="Shift+;" action="ToggleViewUntrackedRays"/>
+            <hotkey key="Shift+B" action="Deselect"/>
+            <hotkey key="Shift+C" action="FillSelectedPattern"/>
+            <hotkey key="Shift+D" action="Unlabel"/>
+            <hotkey key="Shift+E" action="FindNextTail"/>
+            <hotkey key="Shift+F" action="FrameAllInView"/>
+            <hotkey key="Shift+T" action="CreateSkeletonFromLastTemplate"/>
+            <hotkey key="Shift+V" action="SelectAll"/>
+            <hotkey key="Shift+Z" action="FindPreviousGap"/>
+            <hotkey key="Shift+[" action="SetWorkingRangeToPlayRange"/>
+            <hotkey key="Shift+]" action="SetWorkingRangeToPlayRange"/>
+            <hotkey key="Shift+~" action="ToggleLiveEdit"/>
+            <hotkey key="Ctrl+," action="SettingsShowAction"/>
+            <hotkey key="Ctrl+1" action="CalibrationLayout"/>
+            <hotkey key="Ctrl+2" action="CreateAssetsLayout"/>
+            <hotkey key="Ctrl+3" action="CaptureLayout"/>
+            <hotkey key="Ctrl+4" action="EditLayout"/>
+            <hotkey key="Ctrl+6" action="UserLayout2"/>
+            <hotkey key="Ctrl+7" action="UserLayout3"/>
+            <hotkey key="Ctrl+8" action="UserLayout4"/>
+            <hotkey key="Ctrl+9" action="UserLayout5"/>
+            <hotkey key="Ctrl+L" action="ToggleSimplifyMarkerLabels"/>
+            <hotkey key="Ctrl+O" action="OpenFile"/>
+            <hotkey key="Ctrl+P" action="ClearSamples"/>
+            <hotkey key="Ctrl+R" action="ResetSkeletonTracking"/>
+            <hotkey key="Ctrl+S" action="SaveTake"/>
+            <hotkey key="Ctrl+T" action="CreateRigidBody"/>
+            <hotkey key="Ctrl+Y" action="Redo"/>
+            <hotkey key="Ctrl+Z" action="Undo"/>
+            <hotkey key="Ctrl+Shift+P" action="StartCalibration"/>
+            <hotkey key="Ctrl+Shift+S" action="SaveTakeAs"/>
+            <hotkey key="Ctrl+Shift+Z" action="Redo"/>
+            <hotkey key="Ctrl+Shift+Left" action="Rewind"/>
+            <hotkey key="Ctrl+Shift+Right" action="FastForward"/>
+            <hotkey key="Alt+Left" action="SelectPreviousSiblingNodeAction"/>
+            <hotkey key="Alt+Up" action="SelectParentNodeAction"/>
+            <hotkey key="Alt+Right" action="SelectNextSiblingNodeAction"/>
+            <hotkey key="Alt+Down" action="SelectChildNodeAction"/>
+            <hotkey key="Alt+Shift+Up" action="MoveConstraintUp"/>
+            <hotkey key="Alt+Shift+Down" action="MoveConstraintDown"/>
+            <hotkey key="Ctrl+Alt+Z" action="Undo"/>
+        </hotkeys>
+        <actions>
+            <action name="StartStopRecordOrPlayback">
+                <properties>
+                    <property name="TimeManagementActionTakeName" value="Take 2024-12-03 05.19.21 PM"/>
+                    <property name="TimeManagementActionLiveFrameRate" value="240.000000"/>
+                    <property name="TimeManagementActionRecordDelay" value="5"/>
+                    <property name="TimeManagementActionFinished" value="true"/>
+                </properties>
+            </action>
+            <action name="StepTimeForward">
+                <properties>
+                    <property name="TimeManagementActionFinished" value="true"/>
+                </properties>
+            </action>
+            <action name="CreateMarkerset">
+                <properties>
+                    <property name="MarkerSetID" value="13467094195194565103:2031405519582881711"/>
+                </properties>
+            </action>
+            <action name="MoveConstraintTop">
+                <properties>
+                    <property name="ConstraintID" value="4089353779613733359:15774839349601726383"/>
+                </properties>
+            </action>
+            <action name="MoveConstraintUp">
+                <properties>
+                    <property name="ConstraintID" value="4089353779613733359:15774839349601726383"/>
+                </properties>
+            </action>
+            <action name="MoveConstraintDown">
+                <properties>
+                    <property name="ConstraintID" value="4089353779613733359:15774839349601726383"/>
+                </properties>
+            </action>
+            <action name="MoveConstraintBottom">
+                <properties>
+                    <property name="ConstraintID" value="4089353779613733359:15774839349601726383"/>
+                </properties>
+            </action>
+        </actions>
+    </action_manager>
+    <property_definition_warehouse version="1">
+        <definitions>
+            <definition>
+                <name>CameraNodeIsCalibrated</name>
+                <advanced>false</advanced>
+            </definition>
+            <definition>
+                <name>ChildInfo</name>
+                <advanced>true</advanced>
+            </definition>
+            <definition>
+                <name>ParentInfo</name>
+                <advanced>true</advanced>
+            </definition>
+        </definitions>
+    </property_definition_warehouse>
+    <labeling_panel>
+        <properties>
+            <property name="GapSize" value="10"/>
+            <property name="SpikeVelocity" value="70.000000"/>
+        </properties>
+    </labeling_panel>
+    <take_manager version="1">
+        <sessions>
+            <session path="C:/Users/MoCap/Documents/OptiTrack/Default/"/>
+        </sessions>
+        <current_session path="C:/Users/MoCap/Documents/OptiTrack/Default/"/>
+    </take_manager>
+    <plugin_devices/>
+    <node_assets>
+        <marker_set version="1001" id="b7c9193fdaf462af:8e13e168988a11ef">
+            <properties>
+                <property name="NodeName" value="Right" default_value="Right"/>
+                <property name="AssetName" value="Right"/>
+                <property name="JointName" value="Right"/>
+                <property name="ParentInfo" value="None"/>
+                <property name="ChildInfo" value="None"/>
+                <property name="AssetVisible" value="false"/>
+                <property name="ShowBones" value="true" default_value="true"/>
+            </properties>
+            <constraints>
+                <constraint name="Marker 001" id="b7c9193fdaf462af:8e13e169988a11ef" member_id="1" joint_name="Right">
+                    <active_id>0</active_id>
+                    <diameter>0.0133134</diameter>
+                    <weight>1</weight>
+                    <color>#00FFFF00</color>
+                </constraint>
+                <constraint name="Marker 002" id="b7c9193fdaf462af:8e13e16a988a11ef" member_id="2" joint_name="Right">
+                    <active_id>0</active_id>
+                    <diameter>0.0140256</diameter>
+                    <weight>1</weight>
+                    <color>#00FF0096</color>
+                </constraint>
+                <constraint name="Marker 003" id="b7c9193fdaf462af:8e13e16b988a11ef" member_id="3" joint_name="Right">
+                    <active_id>0</active_id>
+                    <diameter>0.0137852</diameter>
+                    <weight>1</weight>
+                    <color>#0000FF00</color>
+                </constraint>
+            </constraints>
+            <marker_sticks>
+                <!--The "origin" and "end" tags in this section correspond with the "name" values in <constraint>-->
+                <marker_stick origin="Marker 001" end="Marker 002" color="0 255 255"/>
+                <marker_stick origin="Marker 002" end="Marker 003" color="150 0 255"/>
+            </marker_sticks>
+            <constraint_graph version="2.0">
+                <row index="0" id="b7c9193fdaf462af:8e13e169988a11ef"/>
+                <row index="1" id="b7c9193fdaf462af:8e13e16a988a11ef"/>
+                <row index="2" id="b7c9193fdaf462af:8e13e16b988a11ef"/>
+            </constraint_graph>
+        </marker_set>
+        <marker_set version="1001" id="b7c9193fdaf462af:ab78afab988b11ef">
+            <properties>
+                <property name="NodeName" value="Bimanual" default_value="Bimanual"/>
+                <property name="AssetName" value="Bimanual"/>
+                <property name="JointName" value="Bimanual"/>
+                <property name="ParentInfo" value="None"/>
+                <property name="ChildInfo" value="None"/>
+                <property name="AssetVisible" value="false"/>
+                <property name="ShowBones" value="true" default_value="true"/>
+            </properties>
+            <constraints>
+                <constraint name="Marker 001" id="b7c9193fdaf462af:ab78afac988b11ef" member_id="1" joint_name="Bimanual">
+                    <active_id>0</active_id>
+                    <diameter>0.014</diameter>
+                    <weight>1</weight>
+                    <color>#00FFFF00</color>
+                </constraint>
+                <constraint name="Marker 002" id="b7c9193fdaf462af:ab78afad988b11ef" member_id="2" joint_name="Bimanual">
+                    <active_id>0</active_id>
+                    <diameter>0.014</diameter>
+                    <weight>1</weight>
+                    <color>#00FF0096</color>
+                </constraint>
+                <constraint name="Marker 003" id="b7c9193fdaf462af:ab78afae988b11ef" member_id="3" joint_name="Bimanual">
+                    <active_id>0</active_id>
+                    <diameter>0.014</diameter>
+                    <weight>1</weight>
+                    <color>#0000FF00</color>
+                </constraint>
+                <constraint name="Marker 004" id="b7c9193fdaf462af:ab78afaf988b11ef" member_id="4" joint_name="Bimanual">
+                    <active_id>0</active_id>
+                    <diameter>0.014</diameter>
+                    <weight>1</weight>
+                    <color>#00FFFF00</color>
+                </constraint>
+                <constraint name="Marker 005" id="b7c9193fdaf462af:ab78afb0988b11ef" member_id="5" joint_name="Bimanual">
+                    <active_id>0</active_id>
+                    <diameter>0.014</diameter>
+                    <weight>1</weight>
+                    <color>#00FF0096</color>
+                </constraint>
+                <constraint name="Marker 006" id="b7c9193fdaf462af:ab78afb1988b11ef" member_id="6" joint_name="Bimanual">
+                    <active_id>0</active_id>
+                    <diameter>0.014</diameter>
+                    <weight>1</weight>
+                    <color>#0000FF00</color>
+                </constraint>
+            </constraints>
+            <marker_sticks>
+                <!--The "origin" and "end" tags in this section correspond with the "name" values in <constraint>-->
+                <marker_stick origin="Marker 001" end="Marker 002" color="0 255 255"/>
+                <marker_stick origin="Marker 002" end="Marker 003" color="150 0 255"/>
+                <marker_stick origin="Marker 003" end="Marker 004" color="0 255 0"/>
+                <marker_stick origin="Marker 004" end="Marker 005" color="0 255 255"/>
+                <marker_stick origin="Marker 005" end="Marker 006" color="150 0 255"/>
+            </marker_sticks>
+            <constraint_graph version="2.0">
+                <row index="0" id="b7c9193fdaf462af:ab78afac988b11ef"/>
+                <row index="1" id="b7c9193fdaf462af:ab78afad988b11ef"/>
+                <row index="2" id="b7c9193fdaf462af:ab78afae988b11ef"/>
+                <row index="3" id="b7c9193fdaf462af:ab78afaf988b11ef"/>
+                <row index="4" id="b7c9193fdaf462af:ab78afb0988b11ef"/>
+                <row index="5" id="b7c9193fdaf462af:ab78afb1988b11ef"/>
+            </constraint_graph>
+        </marker_set>
+        <marker_set version="1001" id="daeb7ccf4ddd6faf:38c04d95a2c711ef">
+            <properties>
+                <property name="NodeName" value="Right1" default_value="Markerset 001"/>
+                <property name="AssetName" value="Right1"/>
+                <property name="JointName" value="Right1"/>
+                <property name="ParentInfo" value="None"/>
+                <property name="ChildInfo" value="Marker 001"/>
+                <property name="ShowLabel" value="true"/>
+                <property name="ShowBones" value="true" default_value="true"/>
+            </properties>
+            <constraints>
+                <constraint name="Index" id="daeb7ccf4ddd6faf:38c04d96a2c711ef" member_id="1" joint_name="Right1">
+                    <active_id>0</active_id>
+                    <diameter>0.012085</diameter>
+                    <weight>1</weight>
+                    <color>#00FFFF00</color>
+                </constraint>
+                <constraint name="Marker 002" id="daeb7ccf4ddd6faf:38c04d97a2c711ef" member_id="2" joint_name="Right1">
+                    <active_id>0</active_id>
+                    <diameter>0.0118505</diameter>
+                    <weight>1</weight>
+                    <color>#00FF0096</color>
+                </constraint>
+                <constraint name="Marker Thumb" id="daeb7ccf4ddd6faf:38c04d98a2c711ef" member_id="3" joint_name="Right1">
+                    <active_id>0</active_id>
+                    <diameter>0.0126396</diameter>
+                    <weight>1</weight>
+                    <color>#0000FF00</color>
+                </constraint>
+                <constraint name="Marker 004" id="daeb7ccf4ddd6faf:38c04d99a2c711ef" member_id="4" joint_name="Right1">
+                    <active_id>0</active_id>
+                    <diameter>0.012561</diameter>
+                    <weight>1</weight>
+                    <color>#00FFFF00</color>
+                </constraint>
+                <constraint name="Wrist" id="daeb7ccf4ddd6faf:38c04d9aa2c711ef" member_id="5" joint_name="Right1">
+                    <active_id>0</active_id>
+                    <diameter>0.0121621</diameter>
+                    <weight>1</weight>
+                    <color>#00FF0096</color>
+                </constraint>
+            </constraints>
+            <marker_sticks>
+                <!--The "origin" and "end" tags in this section correspond with the "name" values in <constraint>-->
+                <marker_stick origin="Index" end="Marker 002" color="0 255 255"/>
+                <marker_stick origin="Marker 002" end="Marker Thumb" color="150 0 255"/>
+                <marker_stick origin="Marker Thumb" end="Marker 004" color="0 255 0"/>
+                <marker_stick origin="Marker 004" end="Wrist" color="0 255 255"/>
+            </marker_sticks>
+            <constraint_graph version="2.0">
+                <row index="0" id="daeb7ccf4ddd6faf:38c04d96a2c711ef"/>
+                <row index="1" id="daeb7ccf4ddd6faf:38c04d97a2c711ef">
+                    <item index="0">0.00722427 245253</item>
+                </row>
+                <row index="2" id="daeb7ccf4ddd6faf:38c04d98a2c711ef">
+                    <item index="0">0.00493279 133767</item>
+                    <item index="1">0.00128092 2.27374e+07</item>
+                </row>
+                <row index="3" id="daeb7ccf4ddd6faf:38c04d99a2c711ef">
+                    <item index="0">0.00318555 3.88313e+07</item>
+                    <item index="1">0.00508366 1.93443e+06</item>
+                    <item index="2">0.00651057 518872</item>
+                </row>
+                <row index="4" id="daeb7ccf4ddd6faf:38c04d9aa2c711ef">
+                    <item index="0">0.0192544 208247</item>
+                    <item index="1">0.00556828 5.30328e+07</item>
+                    <item index="2">0.011532 3.79123e+06</item>
+                    <item index="3">0.0107595 1.45911e+07</item>
+                </row>
+            </constraint_graph>
+            <training_data training_count="1">07050400000006000000000000000000000004000000080000000C000000100000001400000028000000140000000000000001000000F2010000210300008E62893BF014343CFC7F00005755553531977D3F8EAE8D23BF7E0D3F02000000F201000021030000FAB2BC3AC3C72C3CFC7F00005F7A615F6734743F37E44D53DEAB003F03000000F2010000210300002DAA373BD4655E3BFC7F0000BF79237197186A3FAADC01FC7D50E53E04000000F201000021030000F72F823CC1D9B93CFC7F00009795AC446FB7933F6BE73CBB449C383F00000000F2010000210300008E62893BF014343CFC7F00005755553531977D3F8EAE8D23BF7E0D3F02000000F201000021030000A51C593AEEE0BB3AFC7F00005064064C8CFC543F2A7572D3E218BC3E03000000F2010000210300002A82793B5B12CF3BFC7F000087673C539BD2743F03EF44B56DA1FB3E04000000F2010000210300002210B23B06BFC23BFC7F0000FEC1812AC4CE763F86AE2509B642003F00000000F201000021030000FAB2BC3AC3C72C3CFC7F00005F7A615F6734743F37E44D53DEAB003F01000000F201000021030000A51C593AEEE0BB3AFC7F00005064064C8CFC543F2A7572D3E218BC3E03000000F20100002103000036F2883BDE06103CFC7F0000522E8FA0D4AA7A3F98A210E57D3A073F04000000F201000021030000934F2A3C09FC443CFC7F000047DAB507149E873F8C111087CD76213F00000000F2010000210300002DAA373BD4655E3BFC7F0000BF79237197186A3FAADC01FC7D50E53E01000000F2010000210300002A82793B5B12CF3BFC7F000087673C539BD2743F03EF44B56DA1FB3E02000000F20100002103000036F2883BDE06103CFC7F0000522E8FA0D4AA7A3F98A210E57D3A073F04000000F20100002103000030E3273CC3B4363CFC7F00000C7398231609863FE633B7A9EF5C1E3F00000000F201000021030000F72F823CC1D9B93CFC7F00009795AC446FB7933F6BE73CBB449C383F01000000F2010000210300002210B23B06BFC23BFC7F0000FEC1812AC4CE763F86AE2509B642003F02000000F201000021030000934F2A3C09FC443CFC7F000047DAB507149E873F8C111087CD76213F03000000F20100002103000030E3273CC3B4363CFC7F00000C7398231609863FE633B7A9EF5C1E3F100000000500000000000000EF11C7A2964DC038AF6FDD4DCF7CEBDAEF11C7A2974DC038AF6FDD4DCF7CEBDAEF11C7A2984DC038AF6FDD4DCF7CEBDAEF11C7A2994DC038AF6FDD4DCF7CEBDAEF11C7A29A4DC038AF6FDD4DCF7CEBDA0500000000000000EF11C7A2964DC038AF6FDD4DCF7CEBDA0000000000000000EF11C7A2974DC038AF6FDD4DCF7CEBDA0000000000000000EF11C7A2984DC038AF6FDD4DCF7CEBDA0000000000000000EF11C7A2994DC038AF6FDD4DCF7CEBDA0000000000000000EF11C7A29A4DC038AF6FDD4DCF7CEBDA0000000000000000</training_data>
+        </marker_set>
+    </node_assets>
+    <device_assets/>
+    <camera_manager>
+        <properties>
+            <property name="CameraManagerMasterRate" value="240.000000" default_value="180.000000"/>
+            <property name="CameraManagerMasterRateSource" value="None"/>
+        </properties>
+    </camera_manager>
+    <pane_manager>
+        <colors version="1"/>
+        <panes>
+            <pane_12>
+                <control_deck current_property="0"/>
+            </pane_12>
+            <pane_22>
+                <data_manager>
+                    <table selected_model="Advanced" sort="3" sort_order="0" compact_view="0">
+                        <model name="Simple" read_only="1" tree_open="0" widths="36,35,35,245,39,39,56,59,54,63,120,108,98,108,72,118,125,125"/>
+                        <model name="Advanced" read_only="1" tree_open="0" widths="36,35,35,115,39,39,56,59,54,63,241,108,98,108,72,118,125,125"/>
+                    </table>
+                </data_manager>
+            </pane_22>
+            <pane_23>
+                <assets>
+                    <table selected_model="Simple" sort="3" sort_order="0" compact_view="0">
+                        <model name="Simple" read_only="0" tree_open="0" visibility="0,1,2,3" order="0,1,2,3,4,5,6,7,8,9" widths="36,130,40,50,100,50,50,50,50,50"/>
+                    </table>
+                </assets>
+            </pane_23>
+            <pane_26>
+                <builder type="Markerset" orientation="+Z Forward" marker_label="Default"/>
+            </pane_26>
+            <pane_27>
+                <tables>
+                    <camera>
+                        <table selected_model="Simple" sort="0" sort_order="0" compact_view="0">
+                            <model name="Simple" read_only="0" tree_open="0" visibility="0,1,2,3,4,5" order="0,1,2,3,4,5,6,7,8,9,10,11,12,13" widths="30,50,67,45,66,37,50,70,70,50,70,57,50,75"/>
+                        </table>
+                    </camera>
+                    <color_camera>
+                        <table selected_model="Simple" sort="0" sort_order="0" compact_view="0">
+                            <model name="Simple" read_only="0" tree_open="0" visibility="0,2,3,4,5,6" order="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14" widths="30,50,45,58,40,60,70,70,70,50,57,70,56,50,37"/>
+                        </table>
+                    </color_camera>
+                    <sync>
+                        <table selected_model="Simple" sort="0" sort_order="0" compact_view="0">
+                            <model name="Simple" read_only="0" tree_open="0" visibility="0,1" order="0,1" widths="71,85"/>
+                        </table>
+                    </sync>
+                    <force_plate>
+                        <table selected_model="Simple" sort="0" sort_order="0" compact_view="0">
+                            <model name="Simple" read_only="0" tree_open="0" visibility="0,1,2,3,4" order="0,1,2,3,4,5,6" widths="30,50,67,70,42,90,85"/>
+                        </table>
+                    </force_plate>
+                    <data_acquisition>
+                        <table selected_model="Simple" sort="0" sort_order="0" compact_view="0">
+                            <model name="Simple" read_only="0" tree_open="0" visibility="0,1,2,3,4,5" order="0,1,2,3,4,5,6,7" widths="30,50,67,70,42,35,90,85"/>
+                        </table>
+                    </data_acquisition>
+                    <gloves>
+                        <table selected_model="Simple" sort="0" sort_order="0" compact_view="0">
+                            <model name="Simple" read_only="0" tree_open="0" visibility="0,1,2,3,4" order="0,1,2,3,4,5,6,7,8" widths="90,70,50,55,45,50,45,70,85"/>
+                        </table>
+                    </gloves>
+                    <general_devices>
+                        <table selected_model="Simple" sort="0" sort_order="0" compact_view="0">
+                            <model name="Simple" read_only="0" tree_open="0" visibility="0,1,2,3,4,5,6" order="0,1,2,3,4,5,6,7" widths="30,50,45,90,70,40,35,85"/>
+                        </table>
+                    </general_devices>
+                    <active_tag>
+                        <table selected_model="Simple" sort="0" sort_order="0" compact_view="0">
+                            <model name="Simple" read_only="0" tree_open="0" visibility="0,1,2" order="0,1,2,3" widths="80,120,80,54"/>
+                        </table>
+                    </active_tag>
+                </tables>
+            </pane_27>
+            <pane_30>
+                <calibration calibration_show_cameragrid="0"/>
+            </pane_30>
+            <pane_33>
+                <labeling show_settings="1" layout="0">
+                    <labels_1>
+                        <table selected_model="Simple" sort="1" sort_order="0" compact_view="0">
+                            <model name="Simple" read_only="0" tree_open="0" visibility="0,1,2" order="0,1,2" widths="272,245,55"/>
+                        </table>
+                    </labels_1>
+                    <labels_2>
+                        <table selected_model="Simple" sort="-1" sort_order="0" compact_view="0">
+                            <model name="Simple" read_only="0" tree_open="0" visibility="0,1" order="0,1,2" widths="79,55,55"/>
+                        </table>
+                    </labels_2>
+                    <unlabeled>
+                        <table selected_model="Simple" sort="-1" sort_order="0" compact_view="0">
+                            <model name="Simple" read_only="0" tree_open="0" visibility="0,1" order="0,1,2" widths="79,55,55"/>
+                        </table>
+                    </unlabeled>
+                </labeling>
+            </pane_33>
+            <pane_35>
+                <info_pane PaneMode="0"/>
+            </pane_35>
+            <pane_38>
+                <log_pane/>
+            </pane_38>
+        </panes>
+    </pane_manager>
+    <viewports>
+        <viewport_frame name="main" layout_id="1">
+            <layout id="1">
+                <view index="1" view_type="1" width="912" height="771">
+                    <view_state view_type="1">
+                        <properties>
+                            <property name="ShowMarkers" value="true"/>
+                            <property name="ShowCameras" value="true"/>
+                            <property name="ShowRigidBodies" value="true"/>
+                            <property name="ShowAssetModelMarkers" value="0"/>
+                            <property name="ShowSkeletons" value="1"/>
+                            <property name="ShowMarkerSet" value="true" default_value="true"/>
+                            <property name="ShowMarkerLabels" value="true"/>
+                            <property name="ShowMarkerColors" value="true"/>
+                            <property name="ShowMarkerSticks" value="true"/>
+                            <property name="ThreeDMarkerHistory" value="true"/>
+                            <property name="ShowTwoMarkerDistance" value="true"/>
+                            <property name="ShowThreeMarkerAngle" value="true"/>
+                            <property name="ShowTrackedRays" value="true"/>
+                            <property name="ShowUntrackedRays" value="false"/>
+                            <property name="ShowAllTrackedRays" value="false"/>
+                            <property name="ShowMarkerCount" value="true"/>
+                            <property name="ShowCoordinateAxis" value="true"/>
+                            <property name="ShowCaptureVolume" value="false"/>
+                            <property name="ShowFloorPlane" value="false"/>
+                            <property name="FloorPlaneColor" value="4282335039"/>
+                            <property name="HideMarkersForHiddenAssets" value="false"/>
+                            <property name="ShowShadows" value="false"/>
+                            <property name="ShowGlowEffect" value="false"/>
+                            <property name="ShowModelMarkerSticks" value="false"/>
+                            <property name="ShowLiveGraph" value="false"/>
+                        </properties>
+                    </view_state>
+                    <view_state view_type="2">
+                        <properties>
+                            <property name="VerboseInfo" value="false"/>
+                            <property name="ShowCameraObjectCoords" value="true"/>
+                            <property name="ShowMarkerCrosshairs" value="false"/>
+                            <property name="ShowObjectExtents" value="false"/>
+                            <property name="ShowMarkerRoundness" value="false"/>
+                            <property name="ShowCameraObjectSize" value="false"/>
+                            <property name="ShowCameraMask" value="true"/>
+                        </properties>
+                    </view_state>
+                    <view_state view_type="7">
+                        <properties>
+                            <property name="ShowMarkers" value="true"/>
+                            <property name="ShowCameras" value="true"/>
+                            <property name="ShowRigidBodies" value="true"/>
+                            <property name="ShowAssetModelMarkers" value="0"/>
+                            <property name="ShowSkeletons" value="1"/>
+                            <property name="ShowMarkerSet" value="true" default_value="true"/>
+                            <property name="ShowMarkerLabels" value="false"/>
+                            <property name="ShowMarkerColors" value="true"/>
+                            <property name="ShowMarkerSticks" value="true"/>
+                            <property name="ThreeDMarkerHistory" value="true"/>
+                            <property name="ShowTwoMarkerDistance" value="true"/>
+                            <property name="ShowThreeMarkerAngle" value="true"/>
+                            <property name="ShowTrackedRays" value="true"/>
+                            <property name="ShowUntrackedRays" value="false"/>
+                            <property name="ShowAllTrackedRays" value="false"/>
+                            <property name="ShowMarkerCount" value="true"/>
+                            <property name="ShowCoordinateAxis" value="true"/>
+                            <property name="ShowCaptureVolume" value="false"/>
+                            <property name="ShowFloorPlane" value="false"/>
+                            <property name="FloorPlaneColor" value="4282335039"/>
+                            <property name="HideMarkersForHiddenAssets" value="false"/>
+                            <property name="ShowShadows" value="false"/>
+                            <property name="ShowGlowEffect" value="false"/>
+                            <property name="ShowModelMarkerSticks" value="false"/>
+                            <property name="ShowLiveGraph" value="false"/>
+                        </properties>
+                    </view_state>
+                    <view_state view_type="9">
+                        <properties>
+                            <property name="ShowMarkers" value="true"/>
+                            <property name="ShowCameras" value="true"/>
+                            <property name="ShowRigidBodies" value="true"/>
+                            <property name="ShowAssetModelMarkers" value="0"/>
+                            <property name="ShowSkeletons" value="1"/>
+                            <property name="ShowMarkerSet" value="true" default_value="true"/>
+                            <property name="ShowMarkerLabels" value="false"/>
+                            <property name="ShowMarkerColors" value="true"/>
+                            <property name="ShowMarkerSticks" value="true"/>
+                            <property name="ThreeDMarkerHistory" value="true"/>
+                            <property name="ShowTwoMarkerDistance" value="true"/>
+                            <property name="ShowThreeMarkerAngle" value="true"/>
+                            <property name="ShowTrackedRays" value="true"/>
+                            <property name="ShowUntrackedRays" value="false"/>
+                            <property name="ShowAllTrackedRays" value="false"/>
+                            <property name="ShowMarkerCount" value="true"/>
+                            <property name="ShowCoordinateAxis" value="true"/>
+                            <property name="ShowCaptureVolume" value="false"/>
+                            <property name="ShowFloorPlane" value="false"/>
+                            <property name="FloorPlaneColor" value="4282335039"/>
+                            <property name="HideMarkersForHiddenAssets" value="false"/>
+                            <property name="ShowShadows" value="false"/>
+                            <property name="ShowGlowEffect" value="false"/>
+                            <property name="ShowModelMarkerSticks" value="false"/>
+                            <property name="ShowLiveGraph" value="false"/>
+                        </properties>
+                    </view_state>
+                </view>
+            </layout>
+            <layout id="3">
+                <view index="1" view_type="1" width="914" height="326">
+                    <view_state view_type="1">
+                        <properties>
+                            <property name="ShowMarkers" value="true"/>
+                            <property name="ShowCameras" value="true"/>
+                            <property name="ShowRigidBodies" value="true"/>
+                            <property name="ShowAssetModelMarkers" value="0"/>
+                            <property name="ShowSkeletons" value="1"/>
+                            <property name="ShowMarkerSet" value="true" default_value="true"/>
+                            <property name="ShowMarkerLabels" value="false"/>
+                            <property name="ShowMarkerColors" value="true"/>
+                            <property name="ShowMarkerSticks" value="true"/>
+                            <property name="ThreeDMarkerHistory" value="true"/>
+                            <property name="ShowTwoMarkerDistance" value="true"/>
+                            <property name="ShowThreeMarkerAngle" value="true"/>
+                            <property name="ShowTrackedRays" value="true"/>
+                            <property name="ShowUntrackedRays" value="false"/>
+                            <property name="ShowAllTrackedRays" value="false"/>
+                            <property name="ShowMarkerCount" value="true"/>
+                            <property name="ShowCoordinateAxis" value="true"/>
+                            <property name="ShowCaptureVolume" value="false"/>
+                            <property name="ShowFloorPlane" value="false"/>
+                            <property name="FloorPlaneColor" value="4282335039"/>
+                            <property name="HideMarkersForHiddenAssets" value="false"/>
+                            <property name="ShowShadows" value="false"/>
+                            <property name="ShowGlowEffect" value="false"/>
+                            <property name="ShowModelMarkerSticks" value="false"/>
+                            <property name="ShowLiveGraph" value="false"/>
+                        </properties>
+                    </view_state>
+                </view>
+                <view index="2" view_type="2" width="914" height="440">
+                    <view_state view_type="1">
+                        <properties>
+                            <property name="ShowMarkers" value="true"/>
+                            <property name="ShowCameras" value="true"/>
+                            <property name="ShowRigidBodies" value="true"/>
+                            <property name="ShowAssetModelMarkers" value="0"/>
+                            <property name="ShowSkeletons" value="1"/>
+                            <property name="ShowMarkerSet" value="true" default_value="true"/>
+                            <property name="ShowMarkerLabels" value="false"/>
+                            <property name="ShowMarkerColors" value="true"/>
+                            <property name="ShowMarkerSticks" value="true"/>
+                            <property name="ThreeDMarkerHistory" value="true"/>
+                            <property name="ShowTwoMarkerDistance" value="true"/>
+                            <property name="ShowThreeMarkerAngle" value="true"/>
+                            <property name="ShowTrackedRays" value="true"/>
+                            <property name="ShowUntrackedRays" value="false"/>
+                            <property name="ShowAllTrackedRays" value="false"/>
+                            <property name="ShowMarkerCount" value="true"/>
+                            <property name="ShowCoordinateAxis" value="true"/>
+                            <property name="ShowCaptureVolume" value="false"/>
+                            <property name="ShowFloorPlane" value="false"/>
+                            <property name="FloorPlaneColor" value="4282335039"/>
+                            <property name="HideMarkersForHiddenAssets" value="false"/>
+                            <property name="ShowShadows" value="false"/>
+                            <property name="ShowGlowEffect" value="false"/>
+                            <property name="ShowModelMarkerSticks" value="false"/>
+                            <property name="ShowLiveGraph" value="false"/>
+                        </properties>
+                    </view_state>
+                    <view_state view_type="2">
+                        <properties>
+                            <property name="VerboseInfo" value="false"/>
+                            <property name="ShowCameraObjectCoords" value="false"/>
+                            <property name="ShowMarkerCrosshairs" value="false"/>
+                            <property name="ShowObjectExtents" value="false"/>
+                            <property name="ShowMarkerRoundness" value="false"/>
+                            <property name="ShowCameraObjectSize" value="false"/>
+                            <property name="ShowCameraMask" value="true"/>
+                        </properties>
+                    </view_state>
+                </view>
+            </layout>
+        </viewport_frame>
+        <viewport_frame name="view1" layout_id="1">
+            <layout id="1">
+                <view index="1" view_type="2" width="640" height="480">
+                    <view_state view_type="1">
+                        <properties>
+                            <property name="ShowMarkers" value="true"/>
+                            <property name="ShowCameras" value="true"/>
+                            <property name="ShowRigidBodies" value="true"/>
+                            <property name="ShowAssetModelMarkers" value="0"/>
+                            <property name="ShowSkeletons" value="1"/>
+                            <property name="ShowMarkerSet" value="true" default_value="true"/>
+                            <property name="ShowMarkerLabels" value="false"/>
+                            <property name="ShowMarkerColors" value="true"/>
+                            <property name="ShowMarkerSticks" value="true"/>
+                            <property name="ThreeDMarkerHistory" value="true"/>
+                            <property name="ShowTwoMarkerDistance" value="true"/>
+                            <property name="ShowThreeMarkerAngle" value="true"/>
+                            <property name="ShowTrackedRays" value="true"/>
+                            <property name="ShowUntrackedRays" value="false"/>
+                            <property name="ShowAllTrackedRays" value="false"/>
+                            <property name="ShowMarkerCount" value="true"/>
+                            <property name="ShowCoordinateAxis" value="true"/>
+                            <property name="ShowCaptureVolume" value="false"/>
+                            <property name="ShowFloorPlane" value="false"/>
+                            <property name="FloorPlaneColor" value="4282335039"/>
+                            <property name="HideMarkersForHiddenAssets" value="false"/>
+                            <property name="ShowShadows" value="false"/>
+                            <property name="ShowGlowEffect" value="false"/>
+                            <property name="ShowModelMarkerSticks" value="false"/>
+                            <property name="ShowLiveGraph" value="false"/>
+                        </properties>
+                    </view_state>
+                    <view_state view_type="2">
+                        <properties>
+                            <property name="VerboseInfo" value="false"/>
+                            <property name="ShowCameraObjectCoords" value="false"/>
+                            <property name="ShowMarkerCrosshairs" value="false"/>
+                            <property name="ShowObjectExtents" value="false"/>
+                            <property name="ShowMarkerRoundness" value="false"/>
+                            <property name="ShowCameraObjectSize" value="false"/>
+                            <property name="ShowCameraMask" value="true"/>
+                        </properties>
+                    </view_state>
+                </view>
+            </layout>
+        </viewport_frame>
+    </viewports>
+</profile>

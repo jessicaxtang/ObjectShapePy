@@ -41,15 +41,19 @@ class EEGExperiment:
         """Run the core experiment"""
         # to do: LOTS. (just checking plato goggles rn. will need to add sound, IR sensors, cameras, etc.)
 
-        self.control_goggles("opaque")
-        print("Goggles are opaque") # print statements just for testing
-        time.sleep(3) # Wait for 3 seconds
-        self.control_goggles("transparent")  
-        print("Goggles are transparent")      
-        time.sleep(3) # Wait for 3 seconds
-        self.control_goggles("opaque")
-        print("Goggles are opaque")
-    
+        # self.control_goggles("opaque")
+        # print("Goggles are opaque") # print statements just for testing
+        # time.sleep(3) # Wait for 3 seconds
+        # self.control_goggles("transparent")  
+        # print("Goggles are transparent")      
+        # time.sleep(3) # Wait for 3 seconds
+        # self.control_goggles("opaque")
+        # print("Goggles are opaque")
+        i = 0 
+        while True:
+            print(str(i) + " " + str(self.lj.getFIOState(2)) + " " + str(self.lj.getFIOState(3)) + "\n")
+            i+=1
+
     def save_data(self):
         """Save data to participant file"""
         # to do: make a folder for each participant/block/session?
