@@ -15,6 +15,19 @@ except OSError as e:
     print(f"Failed to load Motive API: {e}")
     exit(1)
 
+# Function to check available functions in DLL
+def print_exported_functions(dll):
+    try:
+        # List of functions that are exported from the DLL
+        exported_funcs = dir(dll)
+        print("Exported Functions in DLL:")
+        for func in exported_funcs:
+            print(func)
+    except Exception as e:
+        print(f"Error accessing exported functions: {e}")
+
+print_exported_functions(motive_api)
+
 # Do we need to load a Motive camera calibration file? IDK
 motive_api.Initialize()
 print("motive API initialized")
