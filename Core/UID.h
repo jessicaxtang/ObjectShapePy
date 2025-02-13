@@ -6,7 +6,7 @@
 #include <iosfwd>
 #include <functional>
 
-#include "Core/BuildConfig.h"
+#include "BuildConfig.h"
 
 #ifdef __PLATFORM__LINUX__
 #include "Core/Platform.h"
